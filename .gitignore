@@ -8,3 +8,27 @@
 /src/Makefile
 /src/*.o
 /gems
+
+
+
+# [環境層] Ruby仮想環境ディレクトリ（rbenv）
+.rbenv/
+
+# [環境層] Rubyバージョン指定ファイル（再現性のため含めることも可）
+# .rbenv-version ← 含める場合は除外しない
+
+# [依存管理] BundlerやGem関連のキャッシュ
+.bundle/
+vendor/
+*.gem
+
+# [一時ファイル] ログやテンポラリ
+log/
+tmp/
+.cache/
+
+# [セキュリティ] 環境変数ファイル
+.env
+
+# [OS依存] macOSの不要ファイル
+.DS_Store
